@@ -1,0 +1,21 @@
+package com.ningmeng.framework.client;
+
+/**
+ * Created by 炫龙 on 2020/2/25.
+ */
+public class NmServiceList1 {
+    public static final String nm_GOVERN_CENTER = "nm-govern-center";
+    public static final String nm_SERVICE_PORTALVIEW = "nm-service-portalview";
+    public static final String nm_SERVICE_SEARCH = "nm-service-search";
+    public static final String nm_SERVICE_MANAGE_COURSE = "nm-service-manage-course";
+    public static final String nm_SERVICE_MANAGE_MEDIA = "nm-service-manage-media";
+    public static final String nm_SERVICE_MANAGE_CMS = "nm-service-manage-cms";
+    public static final String nm_SERVICE_UCENTER = "nm-service-ucenter";
+    public static final String nm_SERVICE_UCENTER_AUTH = "nm-service-ucenter-auth";
+    public static final String nm_SERVICE_UCENTER_JWT = "nm-service-ucenter-jwt";
+    public static final String nm_SERVICE_BASE_FILESYSTEM = "nm-service-base-filesystem";
+    public static final String nm_GOVERN_GATEWAY = "nm-govern-gateway";
+    public static final String nm_SERVICE_BASE_ID = "nm-service-base-id";
+    public static final String nm_SERVICE_MANAGE_ORDER = "nm-service-manage-order";
+    public static final String nm_SERVICE_LEARNING = "nm-service-learning";
+}

@@ -1,0 +1,26 @@
+server:
+  port: 31000
+spring:
+  application:
+    name: nm-service-manage-cms-client
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+    virtualHost: /
+eureka:
+  client:
+    registerWithEureka: true #服务注册开关
+    fetch-registry: true  #服务发现开关
+    service-url:
+       defaultZone: ${EUREKA_SERVER:http://localhost:50101/eureka/,http://localhost:50101/eureka/}
+  instance:
+    prefer-ip-address: true #将自己的ip地址注册到Eureka服务中
+    ip-address: ${IP_ADDRESS:127.0.0.1}
+    instance-id:  ${spring.application.name}:${server.port} #指定实例id
+ningmeng:
+  mq:
+  #cms客户端监控的队列名称（不同的客户端监控的队列不能重复）
+    queue: queue_cms_postpage_01
+    routingKey: 5ad94ba368db5243ec846e91 #此routingKey为门户站点ID
